@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Online - Productos</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="contenedor">
+      <h1>Tienda Online</h1>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html" class="activo">Productos</a></li>
+          <li><a href="carrito.html">Carrito</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contenedor">
+    <section>
+      <h2>Nuestros productos</h2>
+      <p>
+        A continuación se muestra una selección de productos disponibles en la tienda.
+      </p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <img src="img/producto1.jpg" alt="Auriculares inalámbricos">
+        <h3>Auriculares inalámbricos</h3>
+        <p>Sonido envolvente, batería duradera y diseño cómodo.</p>
+        <p class="precio">39,99 €</p>
+        <button class="boton" onclick="anadirProducto(1, 3999)">Añadir al carrito</button>
+      </article>
+
+      <article class="card">
+        <img src="img/producto2.jpg" alt="Teclado mecánico">
+        <h3>Teclado mecánico</h3>
+        <p>Ideal para estudiar, trabajar y jugar con mayor comodidad.</p>
+        <p class="precio">59,99 €</p>
+        <button class="boton" onclick="anadirProducto(2, 5999)">Añadir al carrito</button>
+      </article>
+
+      <article class="card">
+        <img src="img/producto3.jpg" alt="Ratón gaming">
+        <h3>Ratón gaming</h3>
+        <p>Precisión, ergonomía y un diseño moderno para uso diario.</p>
+        <p class="precio">24,99 €</p>
+        <button class="boton" onclick="anadirProducto(3, 2499)">Añadir al carrito</button>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div class="contenedor">
+      <p>&copy; 2026 Tienda Online - Práctica 4</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Online - Carrito</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="contenedor">
+      <h1>Tienda Online</h1>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="carrito.html" class="activo">Carrito</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contenedor">
+    <section>
+      <h2>Carrito de compra</h2>
+      <p>
+        Carrito del comprador con los productos seleccionados para su compra. En esta sección se muestra una tabla con los productos añadidos al carrito, sus cantidades, precios unitarios y el total de cada producto, así como el total final del pedido.
+      </p>
+
+        <button onclick="cargarCarrito()" class="boton">Actualizar carrito</button>
+        
+        <div class="tabla-responsive">
+        <table>
+          <thead>
+            <tr>
+              <th>Producto</th>
+              <th>Cantidad</th>
+              <th>Precio unidad</th>
+              <th>Total</th>
+              <th>Acción</th>
+            </tr>
+          </thead>
+          
+          <tbody id="tabla-carrito">
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="4"><strong>Total final</strong></td>
+              <td><strong id="total-final"></strong></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+
+      <div class="resumen">
+        <h3>Resumen del pedido</h3>
+        <p>
+          El carrito contiene una selección de productos tecnológicos listos para tramitar.
+          Al tratarse de una web estática, este carrito representa una simulación visual
+          del proceso de compra.
+        </p>
+        <a href="contacto.html" class="boton">Finalizar pedido</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="contenedor">
+      <p>&copy; 2026 Tienda Online - Práctica 4</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
